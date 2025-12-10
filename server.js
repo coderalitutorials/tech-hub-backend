@@ -34,6 +34,8 @@ app.use("/api/enrollments", enrollmentRoutes);
 import { errorHandler } from "./middlewares/errorMiddleware.js";
 app.use(errorHandler);
 
+// Important for Vercel Serverless Function
+export default app;
 // const PORT = process.env.PORT || 5000;
 // app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
