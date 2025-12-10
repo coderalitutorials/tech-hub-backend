@@ -15,7 +15,7 @@ connectDB();
 
 const app = express();
 app.use(cors({
-    origin: "http://localhost:5173", // replace with your Vite frontend URL
+    origin: "https://tech-hub-backend-9gs2.vercel.app", // replace with your Vite frontend URL
     methods:  ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"], // allowed HTTP methods
     credentials: true // if you want to send cookies
 }));
